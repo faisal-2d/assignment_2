@@ -1,0 +1,49 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+/* Common Style  */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header, main{
+    margin: 90px 120px;
+}
+.header{
+    display: flex;
+}
+.influencer {
+    width: 50%;;
+}
+.preebook-botton{
+    display: inline-block;
+    margin-top: 26px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: #E02C6D;
+    padding: 10px 25px;
+    border-radius: 41px;
+}
+.fa-arrow-right{
+    margin-left: 10px;
+}
+.influencer img{
+    width: 80%;
+    margin-left: 133px;
+}
+h1{
+    font-size: 52px;
+    margin: 20px 0 26px;
+    line-height: 1.5em;
+}
+.pertnership-logos{
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
