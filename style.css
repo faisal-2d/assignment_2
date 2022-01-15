@@ -1,5 +1,5 @@
 /* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 
 /* Common Style  */
@@ -23,6 +23,7 @@ h3{
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .menu-icon .fas{
@@ -73,10 +74,11 @@ nav{
     display: flex;
     justify-content: center;    
 }
-.collection-item{
-    box-shadow: 10px 10px  15px rgb(235, 235, 235);
+.collection-item{    
+    box-shadow: 0 0 15px rgb(211, 210, 210);
     border-radius: 10px;
     padding: 15px;
+    margin: 15px;
 }
 .collection-image{
     width: 300px;
@@ -90,7 +92,7 @@ nav{
 }
 .price{
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 500;
     margin: 3px 0;
 }
 .rating{
@@ -111,15 +113,42 @@ nav{
 }
 
 .seeMore-button{
+    color: #E02C6D ;
     position: relative;
     float: right;
     margin: 50px 0;
     text-decoration: none;
 }
 
+/* Subcription */
+.subcription{
+    margin: 100px 0;  
+    padding-left: 100px;
+}
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.subcribe-form{
+    display: flex;    
+}
+.subcribe-form input, button{
+    border: 1px solid rgb(224, 224, 224);
+    margin: 10px;
+    padding: 10px;
+}
+.subcribe-form button{
+    border: none;
+    color: #ffffff;
+    background-color: #E02C6D;
+}
+
 /* footer  */
 
 footer{
+    margin-top: 100px;
     background-color: #0A0826;
     color: #ffffff;
     
