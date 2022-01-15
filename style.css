@@ -31,12 +31,20 @@ nav{
 }
 .header{
     display: flex;
+    
+}
+.influencer img{
+    transition: transform .5s;
 }
 
+.header:hover .influencer img{
+    transition: transform .5s;
+    transform: rotate(15deg);
+}
 /* influencer section  */
 
 .influencer {
-    width: 50%;;
+    width: 50%;
 }
 .preebook-botton{
     display: inline-block;
@@ -181,3 +189,109 @@ footer{
     font-size: 1.5em;
 }
 
+
+/* Mdeia Query */
+
+/* Phone */
+
+@media screen and (max-width: 767px){
+    body{        
+        margin: 0;
+        overflow-x: hidden;
+    }
+    header, main{
+        margin: 35px 20px;
+    }
+    .header{
+        flex-direction: column;  
+        justify-content: center;      
+    }
+    .influencer{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .influencer img{
+        width: 75%;
+        margin: 0;
+        
+    }
+    
+    h1{
+        font-size: 28px;
+        margin: 14px 0;        
+    }
+    h2{
+        font-size: 24px;
+    }
+    
+    .pertnership-logos img{
+        width: 15%;
+    }
+    .pertnership-logos{
+        margin: 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }    
+    .collection {       
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;         
+        margin: 0;        
+    }
+    .collection-item {    
+        margin: 0; 
+               
+    }
+    .subcription{
+        margin: 60px 0;  
+        padding-left: 60px;        
+    }
+    .subcription h2{
+        font-size: 24px;               
+    }
+    .subcribe-form{
+        flex-direction: column; 
+        margin: 0 auto;       
+    }
+    .footer p{
+        font-size: 12px;
+    }
+    .footer h3{
+        font-size: 16px;
+    }
+    .social-icons{
+        font-size: .6em;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and  (max-width: 1023px){
+    body{
+        overflow-x: hidden;
+    }
+    header, main{
+        margin: 30px 40px;
+    }
+    .pertnership-logos{
+        margin: 80px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .pertnership-logos img{
+        width: 15%;
+    }
+
+    .collection {       
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;         
+        margin: 0;        
+    }
+    .influencer img {
+        width: 80%;
+        margin-left: 50px;
+    }
+
+}
